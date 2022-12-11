@@ -49,6 +49,4 @@ with c1:
 with c2:
     st.markdown('### Bar chart')
     st.bar_chart(                      # donut charts
-        data=f1,
-        x=f1['driver'],
-        y=f1['points'])
+        data=f1)
