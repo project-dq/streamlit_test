@@ -18,7 +18,7 @@ with open('style.css') as f:
 seattle_weather = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
 stocks = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/stocks_toy.csv')
 # replace the previous data with your own streamed data from API
-
+    
 ### Here starts the web app design
 # Row A
 a1, a2, a3 = st.columns(3)
