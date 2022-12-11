@@ -48,7 +48,7 @@ with c1:
     legend=None)
 with c2:
     st.markdown('### Bar chart')
-    plost.bar_chart(                      # donut charts
+    st.bar_chart(                      # donut charts
         data=f1,
         x=f1['driver'],
         y=f1['points'])
