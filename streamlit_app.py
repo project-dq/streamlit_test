@@ -50,6 +50,6 @@ with c2:
     st.markdown('### Bar chart')
     chart_data = pd.DataFrame(index=f1['driver'])
     chart_data['point'] = np.array(f1['points'])
-    chart_data.sort_values(by=['point'])
+    chart_data = chart_data.sort_values(by=['point'])
     st.bar_chart(                      # donut charts
         data=chart_data)
