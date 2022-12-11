@@ -48,5 +48,7 @@ with c1:
     legend=None)
 with c2:
     st.markdown('### Bar chart')
+    chart_data = pd.DataFrame(index=f1['driver'])
+    chart_data['point'] = np.array(f1['points'])
     st.bar_chart(                      # donut charts
-        data=f1)
+        data=chart_data)
