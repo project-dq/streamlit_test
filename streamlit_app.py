@@ -16,7 +16,8 @@ with open('style.css') as f:
 
 # Data
 seattle_weather = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
-stocks = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/stocks_toy.csv')
+#stocks = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/stocks_toy.csv')
+f1 = pd.read_csv('ranking.csv')
 # replace the previous data with your own streamed data from API
     
 ### Here starts the web app design
@@ -47,7 +48,7 @@ with c1:
     legend=None)
 with c2:
     st.markdown('### Bar chart')
-    plost.donut_chart(                      # donut charts
-        data=stocks,
-        theta='q2',
-        color='company')
+    plost.bar_chart(                      # donut charts
+        data=f1,
+        x=f1['driver'],
+        y=f1['points'])
